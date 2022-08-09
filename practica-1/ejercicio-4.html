@@ -1,9 +1,14 @@
+<html>
+<head>
+<title>Ejercicio 4</title>
+</head>
+<body>
 <!-- Imagen con un enlace al sitio web de la Universidad -->
 <p><a href="https://www.frro.utn.edu.ar/"><img src="https://www.editores-srl.com.ar/sites/default/files/logos/utn_regional_rosario_200x200px.jpg" height="10%" alt="imagen1" /></a></p>
 <!-- Linea -->
 <hr>
 <!-- Titulo -->
-<h2><b>AÑO 2018</b></h1>
+<h2><b>AÑO 2018</b></h2>
 <!-- Tabla (en la línea de puntos aparece la fecha de la última actualización) -->
 <table width="500" border="1" " cellpadding="0" cellspacing="0">
 <tr>
@@ -28,3 +33,28 @@
 </tr>
 </table>
 <!-- Lista ordenada con dos enlaces textuales: unmo interno a la página (Enunciado) y otro externo, a otra pagina que se abre en una ventana nueva -->
+<ol>
+<li><a href="#abajo">Enunciado del examen</a></li>
+<li><a href="https://www.frro.utn.edu.ar/ordenanzas.php" target="_blank">Resolución</a></li>
+</ol>
+<!-- Formulario que se envia por ocrreo electronico a@x.com -->
+<form id="form1" action="x@x.com" enctype=text/plain method="post">
+ <legend>Puede realizar consultas completando el siguiente formulario:</legend><br />
+ <label>Email: <input type="email" id="email1" name="email1" /></label><br />
+ <label>Consulta: <input type="text" id="consulta1" name="consulta1" size="50" /></label><br />
+ <input type="reset" id="boton1" name="boton1" value="Borrar" />
+ <input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+<!-- Subtitulo -->
+<h3>Enunciado del examen</h3>
+<!-- Bloque de texto con dos párrafos -->
+<blockquote>
+ <p>Ejercicio 1:.........................<br />
+  ...........................................</p>
+ <p>Ejercicio 2:.........................<br />
+  ...........................................</p>
+</blockquote>
+<!-- Enlace a una dirección de correo electrónico -->
+Para más información dirigirse a <a href="mailto:contacto@xx.com" target="_blank">contacto@xx.com</a>
+</body>
+</html>
