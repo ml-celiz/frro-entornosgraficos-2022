@@ -1,29 +1,30 @@
-<p><img src="https://www.editores-srl.com.ar/empresa/utn_regional_rosario" width="50" height="50" alt="" /><a href="https://www.frro.utn.edu.ar/" title="Universidad Tecnol&oacute;gica Nacional FRRO">https://www.frro.utn.edu.ar/</a></p>
-<hr />
-<p><strong>A&Ntilde;O 2008</strong></p>
-<table border="1" style="border-collapse: collapse; width: 69.4796%; height: 54px;">
-<tbody>
-<tr style="height: 18px;">
-<td style="width: 69.4796%; height: 18px; text-align: center;" colspan="2"><strong>Ex&aacute;menes</strong></td>
+<!-- Imagen con un enlace al sitio web de la Universidad -->
+<p><a href="https://www.frro.utn.edu.ar/"><img src="https://www.editores-srl.com.ar/sites/default/files/logos/utn_regional_rosario_200x200px.jpg" height="10%" alt="imagen1" /></a></p>
+<!-- Linea -->
+<hr>
+<!-- Titulo -->
+<h2><b>AÑO 2018</b></h1>
+<!-- Tabla (en la línea de puntos aparece la fecha de la última actualización) -->
+<table width="500" border="1" " cellpadding="0" cellspacing="0">
+<tr>
+ <td colspan="3"><div align="center"><b>Exámenes</b></div></td>
 </tr>
-<tr style="height: 18px;">
-<td style="width: 30.9716%; height: 36px;" rowspan="2">Fecha: ..................................</td>
-<td style="width: 38.508%; height: 18px; text-align: center;">Aprobados</td>
+<tr>
+ <td colspan="2" rowspan="2" >Fecha: 
+  <!-- Obtener fecha actual -->
+  <div id="current_date">
+   <script>
+    date = new Date();
+    year = date.getFullYear();
+    month = date.getMonth() + 1;
+    day = date.getDate();
+    document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+   </script>
+ </td>
+ <td align="center" >Aprobados</td>
 </tr>
-<tr style="height: 18px;">
-<td style="width: 38.508%; height: 18px; text-align: center;">24/30</td>
+<tr>
+ <td align="center" width="50%">24/30</td>
 </tr>
-</tbody>
 </table>
-<p>1.</p>
-<p>2.</p>
-<p></p>
-<p>Puede realizar consultas completando el siguiente formulario:</p>
-<p>email:&nbsp;</p>
-<p>consulta:</p>
-<p></p>
-<p><strong>Enunciado de examen</strong></p>
-<p>Ejercicio 1: ........................................................</p>
-<p>Ejercicio 2: ........................................................</p>
-<p></p>
-<p>Para mas informaci&oacute;n dirigirse a</p>
+<!-- Lista ordenada con dos enlaces textuales: unmo interno a la página (Enunciado) y otro externo, a otra pagina que se abre en una ventana nueva -->
