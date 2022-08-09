@@ -1,24 +1,89 @@
 <!-- 
 3. a)
+- Primer linea: se crea un enlace haciendole click al texto contenido donde el atributo href indica la dirección del recurso enlazado que en este caso 
+es Google. En el navegador se visualiza el vinculo "Click aquí para ir a Google".
+- Segunda linea: se le agrega el atributo target="_blank" que indica que el vínculo se abrirá en una nueva ventana.
+- Tercer linea: se agregan los atributos type que indica el tipo de contenido que en este caso es texto, hreflang que indica identifica al 
+lenguaje que en este caso es español, charset que indica la codificación de caracteres en el formato utf-8, y por ultimo rel que indica un vínculo
+a ayuda contextual.
+- Cuarta linea: vemos que href="#" lo que indica que es un enlace a ningun lado. En el navegador se sigue visualizando lo mismo.
+- Quinta linea: vemos algo similar, href="#arriba" lo que indica que se vincula a elementos internos de la página. En el navegador se sigue visualizando 
+lo mismo.
+- Sexta linea: la etiqueta no tiene contenido y tiene dos atributos name que es un identificador no unico de la etiqueta con el valor de
+"arriba" mientras que id es el identificador unico para los elementos de la etiqueta con el valor "arriba". En el navegador se sigue visualizando lo mismo.
 
 3. b)
+- Primer linea: se muestra una imagen seguida de un enlace haciendole click al texto contenido, ambos encerrados en un parrafo. La imagen cuenta con los
+atributos src="im1.jpg" que indica la url de la misma, y alt="imagen1" que indica lo que se visualiza en el navegador si no se visualiza la imagen, luego 
+dentro de la etiqueta de enlace tenemos el href haciendo referencia a la pagina de Google. Visualmente vemos una imagen seguida del vinculo "Click aquí".
+- Segunda linea: el enlace a Google ahora se realiza haciendole click en la imagen ya que la imagen se encuentra contenida dentro de la etiqueta <a> y el
+contenido fuera de la misma. Visualmente vemos que el vinculo ahora es la imagen.
+- Tercer linea: el enlace a Google ahora se realiza haciendole click tanto a la imagen y al texto juntos ya que la etiqueta </a> cierra luego del contenido.
+Visualmente vemos que el vinculo ahora es la imagen y el texto juntos.
+- Cuarta linea: ahora vemos que en enlace a Google se realiza haciendole click a la imagen y al texto por separado. Visualmente vemos que el vinculo ahora 
+es la imagen y el texto separados.
  
 3. c)
+- Primer codigo: se muestra una lista desordenada (<ul>) de 3 elementos señalados por la etiqueta (<li>) xxx, yyy, zzz. Visualmente vemos 3 items desordenados.
+- Segundo codigo: Es lo mismo nada mas que la lista ahora es ordenada. Visualmente vemos 3 items ordenados.
+- Tercer codigo: se muestra una lista ordenada pero ahora cada elemento es señalado por un numero debido al atributo dentro de la etiqueta <li> value=1, 2 y 3.
+Visualmente vemos los 3 items pero ahora enumerados. 
+- Cuarto codigo: se muestra un bloque de contenido con un parrafo y con saltos de linea. Visualmente vemos 3 items enumerados.
 
 3. d)
+- Primer codigo: se ve una tabla con border="1" que indica numero de pixel del borde principal y width="300" que define la anchura, por otro lado contamos 4 
+celdas normales dadas por la etiqueta <td>, 2 celdas de encabezado dadas por la etiqueta <th> y 3 filas dadas por la etiqueta <tr>.
+- Segundo codigo: Vemos lo mismo con la diferencia que se agrega una etiqueta <div> en las 2 celdas de encabezado para agrupar contenido con el atributo 
+aling="center" que indica que el texto este centrado y ademas la etiqueta <strong> para dar enfasis en esa parte del texto.
 
 3. e)
- 
+- Primer codigo: se ve una tabla con width="200" de anchura con un titulo dado por la etiqueta <caption>, por otro lado contamos con 6 celdas normales dadas 
+por la etiqueta <td> donde tenemos el atributo bgcolor="#dddddd" que indica que el color del fondo del parrafo es gris, por otro lado vemos que se le agrega
+el espaciado en blanco "&nbsp" y por ultimo 2 filas dadas por la etiqueta <tr>.
+- Segundo codigo: se ve lo mismo pero ahora para el titulo se crea una nueva fila y una nueva celda con atributo coldspa="3" para indicar que el espacio de 
+la celda ocupara 3 y con un parrafo centrado por la etiqueta <div> con el atributo align="center".
+
 3. f)
+- Primer codigo: se ve una tabla con width="200" de anchura con un titulo dado por una celda con atributo coldspa="3" para indicar que el espacio de la celda 
+ocupara 3 y con un parrafo centrado por la etiqueta <div> con el atributo align="center", ademas contamos con 6 celdas (una para el titulo) normales dadas 
+por la etiqueta <td> donde tenemos el atributo bgcolor="#dddddd" que indica que el color del fondo del parrafo es gris, y podemos ver que una (la primera) de 
+esas celdas ocupara 2 filas por el atributo rowspan="2", por otro lado vemos que se le agrega el espaciado en blanco "&nbsp" y por ultimo 3 filas dadas por
+la etiqueta <tr>.
+- Segundo codigo: se ve lo mismo nada mas que en este caso una de las celdas (que no es el titulo) tiene un atributo colspan="2" que indica que ocupara 2
+celdas.
 
 3. g)
+- Primer codigo: se ve una tabla con width="200" de anchura y un borde de border="1", contamos con una celda asignada para el titulo con un coldspa="3" 
+para indicar que el espacio de la celda ocupara 3 y con un parrafo centrado por la etiqueta <div> con el atributo align="center", por otro lado tenemos una
+celda que ocupa 2 filas por rowspan="2" y 2 columndas por colspan="2" seguida de otra celda comun y por ultimo una celda por debajo con un width="%50" de 
+anchura. Hay 3 filas dadas por la etiqueta <tr>.
+- Segundo codigo: se ve algo similar solo que ahora tenemos los atributos cellpadding="0" y dellspacing="0" para indicar el espacio entre las celdas 
+y una celda ocupa solamente 2 filas por rowspan="2".
 
 3. h)
+- Primer codigo: se ve una seccion de documento interactiva dada por la etiqueta <form> con id="form1" y nombre="form1", action="procesar.php" que indica
+la direccion de un programa que procesa la información enviada por medio del formulario, method="post" con post htpp para enviar el formulario y un target="_blank"
+para cargar una nueva ventana sin nombre. Seguimos con la etiqueta <fieldset> para organizar en grupos los campos dados por la legenda login, el usuario y la clave.
+Tanto el usuario como la clave poseen etiquetas <input> para recibir datos del usuario con atributos type="text" para mostrar un campo de texto en el nombre y en la
+clave type="password" para indicar una contraseña, id y nombre="usul" y "clave1", y con un valor inicial dado por value="xxx". 
+Por ultimo contamos con otra etiqueta <input> con type="submit" es decir un boton que envia el formulario, id y nombre="boton 1" y evaluado en value="Enviar".
+- Segundo codigo: se ve algo similar solo que cambian ids y nombres, el atributo action="" vacio y metrod="get" con get htpp para enviar el 
+formulario y ahora no tenemos no tenemos un <fieldset> si no dos etiquetas <label> para los campos de usuario y clave.
+- Tercer codigo: similar al primero con action="mailto:xx@xx.com", enctype=text/plain como el valor del atributo method es post el atributo es del tipo MIME. Cambian
+ids y nombres. Ademas en la ultima etiqueta <imput> el type="reset" para tener un boton que restaura los contenidos.
 
 3. i)
+- Primer codigo: se ve una etiqueta <label> seguida de una etiqueta <button> para crear un boton con atributos type="button", nombre y id="boton1". Luego le sigue
+una etiqueta <img> con src="logo.jpg" url de la imagen, alt="Boton con imagen" como texto alternativo si no se soporta la imagen, width="30" para ancho, height="20"
+para alto. Un salto de linea y una etiqueta <b> para letra en negrita.   
+- Segundo codigo: se ve una etiqueta <label>, un <input> con type="botton" para indicar un boton, nombre y id="boton2" evaluado en value="Click aqui".   
 
 3. j)
+- Primer codigo:
+- Segundo codigo:
 
 3. k)
+- Primer codigo:
+- Segundo codigo:
 
 -->
