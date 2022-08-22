@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ejercicio-3</title>
+</head>
+
+<body>
+<!-- Hoja de estilo insertada de manera interna -->
+<style>
+p.quitar /* Selector de elemento con un selector de clase: en este caso afectará a la clase="quitar" (los dos parrafos) */
+    { /* Este codigo css muestra los dos parrafos afectados por la clase="quitar" de color rojo */
+    color: red; /* Declaración: propiedad: color / valor: red */
+    } /* Bloque de declaración */
+*.desarrollo /* Selector universal con un selector de clase: en este caso afectará a la clase="desarrollo" */
+    { /* Este codigo css muestra el parrafo afectado por la clase="desarrollo" con un tamaño de fuente de 8px */
+    font-size: 8px; /* Declaración: propiedad: font-size / valor: 8px */
+    } /* Bloque de declaración */
+.importante /* Selector de clase: en este caso afectará a la clase="importante" */
+    { /* Este codigo css muetra los dos parrafos afectados por la clase="importante" con tamaño de fuente 20px */
+    font-size: 20px; /* Declaración: propiedad: font-size / valor: 20px */
+    } /* Bloque de declaración */
+</style>
+
+<!-- Codigo html -->
+<p class="desarrollo"> 
+En este primer párrafo trataremos lo siguiente:
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar">
+Este párrafo debe ser quitado de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p> <!-- Parrafo no afectado por css -->
+En este otro párrafo trataremos otro tema:<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="importante">
+Y este es el párrafo más importante de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1> <!-- Cabezal no afectado por css -->
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p> <!-- Parrafo afectado por dos reglas css a la vez --> 
+</body>
+
+</html>
