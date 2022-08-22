@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ejercicio-2</title>
+</head>
+
+<body>
+<!-- Hoja de estilo insertada de manera interna -->
+<style>
+p#normal /* Selector de elemento con un selector de ID: en este caso afectará el parrafo con id="normal" */
+    { /* Este codigo css muestra el primer parrafo con una fuente de letra arial o helvetica, con tamaño 11px y en negrita */
+    font-family: arial,helvetica; /* Declaración: propiedad: font-family , valor: arial,helvetica */
+    font-size: 11px; /* Declaración: propiedad: font-size / valor: 11px */
+    font-weight: bold; /* Declaración: propiedad: font-weight / valor: bold */
+    } /* Bloque de declaración */
+*#destacado /* Selector universal (*) con un selector de ID: en este caso afectará el parrafo con id="destacado" */
+    { /* Este codigo css muestra el segundo parrafo y la tabla con un borde solido, es decir, una linea recta de color azul con grosor 2px */
+    border-style: solid; /* Declaración: propiedad: border-style / valor: solid */
+    border-color: blue; /* Declaración: propiedad: border-color / valor: blue */
+    border-width: 2px; /* Declaración: propiedad: border-width / valor: 2px */
+    } /* Bloque de declaración */
+#distinto /* Selector de ID: en este caso afectará el parrafo con id="distinto" */
+    { /* Este codigo css muestra el tercer parrafo con un color de fondo dado por el codigo rgb #9EC7EB y la letra de color rojo */
+    background-color: #9EC7EB; /* Declaración: propiedad: background-color / valor: #9EC7EB */
+    color: red; /* Declaración: propiedad: color / valor: red */
+    } /* Bloque de declaración */
+</style>
+
+<!-- Codigo html -->
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+<p id="distinto">Este es el último párrafo</p>
+</body>
+
+</html>
