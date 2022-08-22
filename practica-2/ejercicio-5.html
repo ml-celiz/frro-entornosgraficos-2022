@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title><Ejercicio-5></Ejercicio-5></title>
+</head>
+
+<body class="importante">
+<!-- Hoja de estilo insertada de manera interna -->
+<style>
+/* 1) */ .titulo { color: red; } /* Los textos enfatizados dentro de cualquier título deben ser rojos. */
+/* 2) */ a:link {color:black; } /*  Cualquier elemento que tenga asignado el atributo "href" y que esté dentro de cualquier párrafo que a su vez esté dentro de un bloque debe ser color negro. */
+/* 3) */ 
+#ultimo {color:yellow; } /* El texto de las listas no ordenadas que estén dentro del bloque identificado como “ultimo” debe ser amarillo pero; */
+#enlace_ul { color: blue; } /* si es un enlace a otra página debe ser azul */
+/* 4) */ .importante { color: green; } /* Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si están dentro de un título deben ser rojos. */
+/* 5) */ h1[title] { color: blue; } /* Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules. */
+/* 6) */ 
+#enlaceol:link {color: blue; text-decoration-line:none; }  /* El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados y; */
+#enlaceol:visited {color: violet; text-decoration-line:none; } /* Violeta para los ya visitados y, además, no deben aparecer subrayados. */
+</style>
+
+<!-- Codigo html -->
+<!-- 1) -->
+<h1 class="titulo"> Titulo h1 </h1>
+<h3 class="titulo"> Titulo h3 </h6>
+<h6 class="titulo"> Titulo h6 </h6>
+
+<!-- 2 -->
+<blockquote>
+    <p><a href="http://www.google.com.ar"> Enlace a Google </a></p>
+    <p><a href="https://www.youtube.com/"> Enlace a Youtube </a></p>
+    <p><a href="https://twitter.com/"> Enlace a Twitter </a></p>
+</blockquote>
+
+<!-- 3 -->
+<ul id="ultimo">
+    <li> xxx </li>
+    <li> yyy </li>
+    <li><a id="enlaceul" href="https://www.frro.utn.edu.ar/"> Enlace a UTN en lista no ordenada </a></li>
+</ul>
+
+<!-- 4 -->
+<p> Hola </p>
+<h2 class="titulo"> Titulo h2 </h2>
+<p> xxx </p>
+
+<!-- 5 -->
+<h1 title="1"> Titulo h1 - 1 </h1>
+<h1 title="2"> Titulo h1 - 2 </h1>
+<h1> Titulo h1 - 3 </h1>
+
+<!-- 6 -->
+<ol>
+    <li><a id="enlaceol" href="https://www.frro.utn.edu.ar/"> Enlace a UTN en lista ordenada </a></li>
+</ol>
+
+</body>
+</html>
