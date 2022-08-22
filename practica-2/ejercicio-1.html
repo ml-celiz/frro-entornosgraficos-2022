@@ -1,0 +1,128 @@
+<!--
+1) CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en cascada. Las hojas de estilo es una tecnología
+que permite controlar la apariencia de una página web. 
+En un principio, los sitios web se concentraban más en su contenido que en su presentación. HTML no pone atención en la apariencia 
+del documento, sino en la estructura. 
+CSS describe como los elementos dispuestos en la página son presentados al usuario. Es un gran avance que complementa el HTML y la Web 
+en general. Con el mismo podemos especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así como el 
+lugar donde disponer texto e imágenes en la página.
+
+2) CSS funciona a base de reglas, es decir, declaraciones sobre el estilo de uno o más elementos. Las hojas de estilo están compuestas 
+por una o más de esas reglas aplicadas a un documento HTML o XML. 
+La regla tiene dos partes: un selector y la declaración. A su vez la declaración está compuesta por una propiedad y el valor que 
+se le asigne. 
+El selector funciona como enlace entre el documento y el estilo, especificando los elementos que se van a ver afectados por esa declaración.
+La declaración es la parte de la regla que establece cuál será el efecto.
+
+3) Hay tres formas de insertar una hoja de estilo:
+ 1. CSS externo: en HTML debemos incluir una referencia al archivo de hoja de estilos (.css) dentro del elemento <link>.
+ 2. CSS interno: se define dentro de la etiqueta <style> de la página HTML.
+ 3. CSS en línea: se puede usar un estilo en línea para aplicar un estilo único para un solo elemento. Los estilos en línea se definen dentro
+ del "atributo estilo" del elemento relevante.
+
+4) Los selectores se utilizan para "seleccionar" los elementos HTML que queremos diseñar.
+Se clasifican en:
+ - Selector univeral: El selector universal, escrito "*", se corresponde con el nombre de cualquier tipo de elemento. Es equivalente con 
+ cualquier elemento en la estructura del documento. Si el selector universal no es el único componente de un selector simple, el "*" puede omitirse.
+ - Selector de tipos: Un selector de tipo se corresponde con el nombre de un tipo de elemento en el lenguaje del documento. Un selector de tipo
+ equivale con cada instancia del tipo de elemento en la estructura del documento.
+ - Selector descendiente: A veces, los autores pueden querer selectores que se correspondan con un elemento que es el descendiente de otro 
+ elemento en la estructura del documento. Los selectores de descendientes expresan tal relación dentro de un patrón.Un selector de descendiente 
+ se compone de dos o más selectores separados por un espacio en blanco. Un selector de descendiente de la forma "A B" equivale cuando un elemento 
+ B en un descendiente arbitrario de algún elemento antepasado A.
+ - Selector de hijos: Un selector de hijo equivale cuando un elemento es el hijo de algún elemento. Un selector de hijo se compone de dos o más 
+ selectores separados por ">".
+ - Selector de hermanos adyacentes: Los selectores de hermanos adyacentes tiene la siguiente sintaxis: E1 + E2, donde E2 es el sujeto del selector. 
+ El selector equivale si E1 y E2 comparten el mismo padre en la estructura del documento y E1 precede inmediatamente a E2. En algunos contextos, los 
+ elementos adyacentes generan objetos con formato cuya presentación es operada automáticamente. El selector "+" permite a los autores especificar 
+ un estilo adicional para los elementos adyacentes.
+ - Selector de atributos: (perteneciente a CSS2) permite a los autores especificar reglas que sean equivalentes con atributos definidos en el documento 
+ fuente. Pueden equivaler de cuatro maneras:
+   1. [att] equivale con los elementos que tienen asignado el atributo "att", cualquiera sea el valor del atributo.
+   2. [att=val] equivale cuando el valor del atributo "att" del elemento es exactamente "val".
+   3. [att~=val] equivale cuando el valor del atributo "att" del elemento es una lista de "palabras" separadas por espacios, una de las cuales es 
+   exactamente "val". Si se usa este selector, las palabras en el valor no deben contener espacios (ya que ellas están separadas por espacios).
+   4. [att|=val] equivale cuando el valor del atributo "att" del elemento es una lista de "palabras" separadas por guiones, comenzando con "val". 
+   La correspondencia siempre comienza al principio del valor del atributo.
+  Los valores de los atributo deben ser identificadores o cadenas. La distinción entre mayúsculas/minúsculas en los nombres y valores de los atributos 
+  de los selectores depende del lenguaje del documento. 
+  Múltiples selectores de atributos pueden ser usados para referirse a varios atributos de un elemento o, incluso, varias veces al mismo atributo.
+  ara lenguajes de documento fuera de HTML, los valores predeterminados de los atributos pueden definirse en una DTD o en cualquier otra parte. 
+  Las hojas de estilo deben diseñarse de manera que trabajen aún cuando los valores predeterminados no estén incluidos en la estructura del documento.
+  Selector de clases:
+  Para las hojas de estilo usadas con HTML, los autores pueden usar el punto (.) como una alternativa a "~=" cuando la correspondencia sea con el atributo 
+  "class". Así, en HTML, "DIV.valor" y "DIV[class~=valor]" tiene el mismo significado. El valor del atributo debe seguir inmediatamente al ".".
+  Para equivaler a un subconjunto de valores "class", cada valor debe ir precedido por un ".", en cualquier orden.
+ - Selector de ID: El atributo ID de un lenguaje de documento le permite a los autores asignar un identificador a una instancia del elemento dentro de la 
+ estructura del documento. Los selectores ID de CSS equivalen a una instancia del elemento basado en su identificador. Un selector ID de CSS contiene un "#" 
+ seguido inmediatamente por el valor de ID. Los selectores de ID tiene una precedencia mayor que los selectores de atributos. Por ejemplo, en HTML, el selector 
+ #p123 es más específico que [ID=p123] en términos de cascada.
+ - Pseudo-clase
+ - Pseudo-elemento
+
+5) Las pseudo-clases clasifican a los elementos basado en características más allá de su nombre, atributos o contenido; en principio, 
+ atributos que no pueden deducirse de la estructura del documento. Las pseudo-clases pueden ser dinámicas, en el sentido de que un elemento puede adquirir 
+ o perder una pseudo-clase a medida que el usuario interactúa con el documento. No aparecen en la estructura del documento. Son permitidas en cualquier lugar
+ dentro de un selector. Su nombre no hace distincion entre minúscula o mayúscula. Algunas pseudo-clases pueden ser mutuamente excluyentes mientras que otras
+ pueden aplicarse simultaneamente al mismo elemento. Si hay conflicto, se aplica el orden de cascada.
+ Se clasifican en:
+  1. ":first-child": equivale a un elemento que es el primer hijo de algún otro elemento.
+  2. Aplicadas a vínculos ":link" y ":visited": Las aplicaciones del usuario normalmente muestran los vínculos no visitados de un modo diferenciado de aquellos 
+  previamente visitados. Se proporcionan estas para distinguirlos:
+   - :link se aplica a los vínculos que aún no han sido visitados.
+   - :visited se aplica una vez que el vínculo ha sido visitado por el usuario.
+  Los dos estados son mutuamente excluyentes. El lenguaje del documento determina qué elementos son las anclas de orígen de los hipervínculos.
+  3. Dinámicas :hover", :active" y ":focus": Las aplicaciones del usuario interactivas a veces cambian el procesamiento en respuesta a las acciones del usuario. 
+  Para casos comunes:
+   - :hover se aplica mientras el usuario señala un elemento (con algún dispositivo para apuntar), pero no lo activa.
+   - :active se aplica mientras un elemento está siendo activado por el usuario.
+   - :focus se aplica mientras un elemento tiene el foco (acepta eventos del teclado u otras formas de entrada de texto).
+  Estas pseudo-clases no son mutuamente excluyentes. Un elemento puede recibir varias de ellas al mismo tiempo.
+  4. Lenguaje ":lang" Si el lenguaje del documento especifica cómo se determina el lenguaje humano de un elemento, es posible escribir selectores en CSS 
+  que coincidan con elementos basado en su lenguaje. En HTML, el lenguaje se determina por una combinación del atributo "lang", el elemento META 
+  y probablemente por la información del protocolo (tal como en los encabezados HTTP). XML utiliza un atributo denominado xml:lang, y puede haber otros métodos 
+  específicos del lenguaje del documento para determinar el lenguaje.
+
+6) La herencia es el proceso por el cual algunas propiedades CSS aplicadas a una etiqueta se pasan a las etiquetas anidadas.
+Hay algunas propiedades en CSS que se heredan y otras que no. Esta diferencia crea dos tipos de grupos de propiedades CSS:
+ 1. Propiedades heredadas (Inherited properties)
+ Las propiedades heredadas son las que pertenecen principalmente al texto:
+ color, font, font-family, font-size, font-weight, font-variant, font-style, line-height, letter-spacing, text-align, text-indent, text-transform,white-space, 
+ y word-spacing.
+ También se heredan algunas otras, como las propiedades de la lista: list-style, list-style-type, list-style-position, y list-style-image.
+ Las propiedades del borde de la tabla, border-collapse y border-spacing, también se heredan.
+ 2. Propiedades no heredadas (Non-inherited properties)
+ Los márgenes, el padding y los bordes (entre otras propiedades) no son heredados por las etiquetas y no es deseable que lo hagan ya que tienen efectos negativos 
+ sobre la apariencia de una página.
+
+El valor "inherit": La palabra clave inherit hace que el valor de una propiedad en un elemento sea el mismo que el valor de su elemento padre. En otras palabras, 
+inherit obliga a que la herencia se produzca incluso en situaciones en las que normalmente no funcionaría.
+El proceso ocurre de la siguiente manera:
+La palabra clave inherit le dice al navegador que busque el valor del elemento padre más cercano y que el elemento actual herede ese valor.
+Si el padre más cercano también tiene el valor inherit, el navegador continuará subiendo por el DOM hasta encontrar algún valor.
+Si no hay ningún valor, el navegador utilizará su estilo de agente de usuario, y si no hay ningún estilo de agente de usuario, utilizará el estilo base inicial 
+o el valor inicial.
+
+7) La cascada en las hojas de estilo significa que el orden de las reglas importa en CSS: cuando dos reglas tienen la misma especificidad, se aplica la que 
+aparece en último lugar en el CSS. 
+La especificidad es el modo que tiene el navegador de decidir qué regla se aplica si diversas reglas tienen selectores diferentes pero podrían aplicarse 
+a un mismo elemento. Básicamente, la especificidad mide cuán específica es la selección de un selector:
+ 1. Un selector de elemento es menos específico (selecciona todos los elementos de aquel tipo que aparecen en la página) por lo que presenta una puntuación más 
+ baja en especificidad.
+ 2. Un selector de clase es más específico (selecciona solo los elementos de una página que tienen un valor de atributo class dado), y por tanto recibe una
+ puntuación mayor.
+Las hojas de estilo pueden tener tres orígenes diferentes:
+ - el autor: especifica las hojas de estilo para un documento fuente de acuerdo a las convenciones del lenguaje del documento.
+ - el usuario: especifica las hojas de estilo para un documento fuente de acuerdo a las convenciones del lenguaje del documento.
+ - la aplicación del usuario: deben aplicar una hoja de estilo predeterminada (o comportarse como si lo hubiesen hecho) previa a todas las hojas de estilo
+ para un documento.
+Las hojas de estilo con estos tres orígenes se superpondrán en su acción e interactuarán de acuerdo a la cascada.
+La cascada de CSS, asigna una fuerza a cada regla de estilo. Cuando varias reglas se aplican, la de mayor fuerza toma preponderancia.
+De forma predefinida, las reglas en las hojas de estilo del autor tienen más fuerza que las reglas en las hojas de estilo del usuario. La preponderancia 
+se revierte, sin embargo, con la reglas "!important". Todas las reglas que el usuario y el autor especifican tienen mayor fuerza que las reglas de la 
+hoja de estilo predeterminada en la AU.
+Las hojas de estilo importadas también forman la cascada y su fuerza depende del orden en la importación. Las reglas especificadas en una hoja de estilo 
+dada sustituyen
+las reglas importadas desde otras hojas de estilo. Las hojas de estilo importadas pueden a su vez importar y sustituir otras hojas de estilo, recursivamente, 
+y se aplican las mismas reglas de preponderancia.
+-->
