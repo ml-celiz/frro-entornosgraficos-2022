@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ejercicio-4.b</title>
+</head>
+
+<body class="contenido">
+<!-- Hoja de estilo insertada de manera interna -->
+<style>
+* {color:green; } /* Selector universal; Declaración: propiedad: color , valor: green */
+a:link {color:gray } /* Pseudo-clase aplicada a un vinculo no visitado (:link); Declaración: propiedad: color , valor: gray */
+a:visited{color:blue } /* Pseudo-clase aplicada a un vinculo visitado (:visited); Declaración: propiedad: color , valor: blue */
+a:hover {color:fuchsia } /* Pseudo-clase aplicada a un elemento señalado pero no activado (:hover); Declaración: propiedad: color , valor: fuchsia */
+a:active {color:red } /* Pseudo-clase aplicada a un elemento activado (:active); Declaración: propiedad: color , valor: red */
+p {font-family: arial,helvetica;font-size: 10px;color:black; } /* Selector de elemento; Declaración: propiedad: font-family; font-size; color , valor: arial,helvetica ;10px ;black */
+.contenido{font-size: 14px;font-weight: bold; } /* Selector de clase="contenido"; Declaración: propiedad: font-size; font-weight , valor: 14px, bold */
+</style>
+
+<!-- Codigo html -->
+<p> Este es un texto................</p> <!-- Esta afectado por: .contenido, *, p (propiedades como font-size se pisan) -->
+<table>
+<tr>
+<td>Y esta es una tabla.......</td> <!-- Esta afectado por: .contenido , * (no se pisa ninguna propiedad) -->
+</tr>
+<tr>
+<td><a href="http://www.google.com.ar">con un enlace</a></td> <!-- Esta afectado por: .contenido, *, :link, :visited, :hover, :active (propiedades como color se pisan) -->
+</tr>
+</table>
+</body>
+</body>
+
+</html>
