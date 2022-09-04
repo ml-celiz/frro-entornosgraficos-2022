@@ -1,0 +1,200 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Jquery, Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <title>ejercicio-1, 2, 3, 4-parte-3</title>
+
+  </head>
+  <body>
+    <style>
+        #rvioleta {
+        border-width: 5px;
+        border-style: solid;
+        border-color: white;
+        }
+
+        #rrosatop {
+        border-top-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-top-width: 5px;
+        border-right-width: 5px;
+        border-left-width: 5px;
+        border-color: white;
+        }
+
+        #rrosabot {
+        border-bottom-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 5px;
+        border-right-width: 5px;
+        border-left-width: 5px;
+        border-color: white;
+        }
+
+        #rrosamiddle {
+        border-right-style: solid;
+        border-left-style: solid;
+        border-right-width: 5px;
+        border-left-width: 5px;
+        border-color: white;
+        }
+
+        #rverde{
+        border-width: 5px;
+        border-style: solid;
+        border-color: white;
+        }
+
+        #rgris {
+        border-width: 5px;
+        border-style: solid;
+        border-color: white;
+        }
+
+        #rceleste {
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        }
+
+    </style>
+    <div class="container">
+        <div class="row"> 
+            <div id="rvioleta" class="col-sm-12 col-md col-lg col-xl" style="background-color:#8000FF"> 
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div id="rrosatop" class="col-sm-12 col-md-3 col-lg-3 col-xl-3" style="background-color:#ea899a"> <!-- 2) Añadir un boton que al hacer click despliegue un modal -->
+                <!-- Boton -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Presione aquí
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Titulo Modal</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rverde" class="col-sm-12 col-md-9 col-lg-9 col-xl-9" style="background-color:#32CD32"> 
+                <div class="alert alert-success"> <!-- 1) Agregar un componente de alerta que tenga la clase alert-success con un texto cualquiera -->
+                    <strong>alert-success</strong> Prueba de componente alert
+                </div>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div id="rrosamiddle" class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-3 col-xl-3" style="background-color:#ea899a"> 
+                <p></p>
+            </div>
+            <div id="rgris" class="col-sm-6 col-md-3 col-lg-3 col-xl-3" style="background-color:#808080"> <!-- 3) Agregar un componente card para cada uno de los 4 rectangulos visibles -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/originals/b3/b8/da/b3b8da2ad00eb487427638d0c7ae9867.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">Texto descriptivo</p>
+                      <a href="https://github.com/ml-celiz/frro-entornosgraficos-2022" target=_blank class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div id="rgris" class="col-sm-6 col-md-3 col-lg-3 col-xl-3" style="background-color:#808080"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/76/6d/18/766d183131feffe8482941d63fad95ac.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">Texto descriptivo</p>
+                      <a href="https://github.com/ml-celiz/frro-entornosgraficos-2022" target=_blank class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div id="rgris" class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-3 col-xl-3" style="background-color:#808080"> 
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div id="rrosamiddle" class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-3 col-xl-3" style="background-color:#ea899a"> 
+                <p></p>
+            </div>
+            <div id="rgris" class="col-sm-6 col-md-3 col-lg-3 col-xl-3" style="background-color:#808080"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="https://helloartsy.com/wp-content/uploads/kids/cats/cat-toy-drawing/cat-toy-drawing-step-9-1024x768.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">Texto descriptivo</p>
+                      <a href="https://github.com/ml-celiz/frro-entornosgraficos-2022" target=_blank class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div id="rgris" class="col-sm-6 col-md-3 col-lg-3 col-xl-3" style="background-color:#808080"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/originals/c2/f4/ad/c2f4ad5c553758c9ccb4eae1562b1e3d.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título</h5>
+                      <p class="card-text">Texto descriptivo</p>
+                      <a href="https://github.com/ml-celiz/frro-entornosgraficos-2022" target=_blank class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div id="rgris" class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-3 col-xl-3" style="background-color:#808080"> 
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div id="rrosabot" class="d-none d-sm-none d-md-block d-lg-block d-xl-block col-md-3 col-lg-3 col-xl-3" style="background-color:#ea899a"> 
+                <p></p>
+            </div>
+            <div id="rceleste" class="col-sm-6 col-md-3 col-lg-3 col-xl-3" style="background-color:#40CFFF"> 
+                <p></p>
+            </div>
+            <div id="rceleste" class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="background-color:#40CFFF"> 
+                <div class="carousel slide" data-ride="carousel"> <!-- 4) Slider con tres imágenes -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="http://static.miscota.com/consejos/wp-content/uploads/2017/01/shutterstock_201722066-720x480.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/e0/eb/3b/e0eb3b6f07bf7e62c32fd69c0ed3eb84.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.clarin.com/img/2022/08/23/Y7snbXzZr_720x0__1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
