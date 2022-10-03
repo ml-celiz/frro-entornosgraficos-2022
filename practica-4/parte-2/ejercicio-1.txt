@@ -1,0 +1,8 @@
+ejercicio-1)
+
+•	Primer código: Se asigna a la variable $a un array con 4 elementos formados por partes clave-valor (color - rojo, 
+sabor - dulce, forma - redonda, nombre - manzana), y un elemento normal (4).
+
+•	Segundo código: Es otra forma de crear un array, asignando a cada variable $a una clave entre corchetes y un valor.
+
+Los dos códigos dan la misma salida, son equivalentes.

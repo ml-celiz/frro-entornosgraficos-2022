@@ -1,0 +1,4 @@
+ejercicio-4)
+La primera salida producirá 'El' + un error ya que las variables $color y $flor todavía no se encuentran cargadas. 
+La segunda salida producirá: 'El clavel blanco'.
+

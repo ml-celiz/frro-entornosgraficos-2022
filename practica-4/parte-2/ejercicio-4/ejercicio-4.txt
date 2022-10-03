@@ -1,0 +1,25 @@
+ejercicio-4)
+La función posee 2 validaciones: 
+•	La primera es respecto al tamaño del string que se ingresa. Se declara un if donde la condición es que la longitud del 
+parámetro ingresado $nombre_usuario sea menor que 3 o mayor que 20, si se cumple, muestra por pantalla un texto indicando que 
+no es válido y devuelve false.
+•	La segunda validación es respecto a los caracteres permitidos. Se asigna a una variable un string formado por todos los 
+caracteres permitidos. Luego, se declara un for donde la primera condición es la inicialización de la variable $i en 0, la segunda 
+que $i sea menor que la longitud del parametro ingresado $nombre_usuario, y la tercera el incremento de $i, esto sirve para recorrer 
+el string. 
+Dentro se declara un if donde por cada iteración del for evalúa que el carácter se encuentre en el parámetro ingresado $nombre_usuario, 
+esto se realiza con la función strpos donde la primera condición es el string donde buscar los caracteres $permitidos, la segunda donde 
+encontrarlos $nombre_usuario que se encuentra dentro de un substr para devolver una parte del string definida por un start = $i y una 
+lenght = 1. Toda esto será igual a false y de ser verdadero mostrará por pantalla un texto indicando que no es válido y devuelve false.
+Caso contrario, muestra por pantalla que el nombre es valido y devuelve true.
+
+Para probar el funcionamiento de la función se declará las siguientes sentencias llamando a la misma con diferentes valores.
+
+-	comprobar_nombre_usuario(“maria”) 
+Salida: maria es válido //Para corroborar ambas validaciones
+-	comprobar_nombre_usuario(“ma”) 
+Salida: ma no es válido //Para corroborar primer validación longitud menor que 3
+-	comprobar_nombre_usuario(“marianievesabcdefghi12345”) 
+Salida: marianievesabcdefghi12345 no es válido //Para corroborar primer validación longitud mayor que 20
+-	comprobar_nombre_usuario(“{.-.,lo”) 
+Salida: {.-.,lo no es válido //Para corroborar segunda validación de caracteres

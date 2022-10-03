@@ -1,0 +1,9 @@
+ejercicio-3)
+a) Se le asigna a la variable $fun el array dado por getday(). Luego, se muestra por pantalla los datos que se desean del 
+array (hours, minutes, seconds, mday, mon, year) llamándolos por la clave.
+Salida: Has entrado en esta página a las 20 horas, con 42 minutos y 48 segundos, del 2/10/2022
+
+b) Crea una función sumar con dos parámetros (parámetro1 y parámetro2) , dentro de la misma se crea una variable $suma la cual
+es igual a la suma de los dos parámetros y por último se imprime el parametro1 + parametro2 = $suma.
+Se llama la función con parametro1=5 y parámetro2=6.
+Salida: 5+6=11

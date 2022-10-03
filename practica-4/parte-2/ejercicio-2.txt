@@ -1,0 +1,12 @@
+ejercicio-2)
+a) Se le asigna a una variable $matriz un array con 2 elementos formador por partes clave-valor. Luego se accede a cada uno 
+de los elementos y muestra por pantalla. 
+Salida: bar1 (debido a que true=1)
+
+b) Se le asigna a una variable $matriz un array multidimensional con 3 elementos formados por partes clave-valor. Luego se acede 
+a cada uno de los elementos y muestra por pantalla.
+Salida: 5942
+
+c) Se le asigna a una variable $matriz un array formado por 2 elementos por partes clave-valor. Luego se le agrega a $matriz dos 
+elementos, uno común (56) y otro clave-valor (x - 42). Por último, se borra un elemento de $matriz y luego $matriz completa.
+Salida: Vacío

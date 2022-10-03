@@ -1,0 +1,19 @@
+ejercicio-3)
+a) 
+Este codigo sirve para crear una tabla vacía con 5 filas y 2 columnas.
+Comienza con la declaración del codigo html para la creación de una tabla.
+Se utiliza un bucle for para las filas donde la primera expresión es un contador $r inicializado en 1, la segunda que $r sea menor o igual a 
+la cantidad de filas asignadas por $row, y la tercera expresión el incremento de $r.
+Luego, se crean filas con ayuda del codigo html y se anida otro for para las columnas siendo la primera expresión un contador $c inicializado en 
+1, la segunda que $c sea menor o igual a la cantidad de columnas asignadas por $col, y la tercera expresión el incremento de c$. 
+Dentro del segundo for nos encontramos con el codigo html para crear las columnas y que las mismas estén vacías.
+Claramente podríamos variar la cantidad de filas y columnas modificando las variables $row y $col.
+
+b) 
+Este codigo es un formulario que valida si la edad ingresada corresponde a una persona mayor o menor de edad.
+Comienza con un if con un isset para determinar si la variable $_POST ['submit'] está definida. De ser true se crea junto con html un formulario 
+con action= el nombre del archivo que se está ejecutando actualmente y un method= que va a enviar datos, un campo para el ingreso de datos(edad) y 
+un botón.
+Luego, con la variable $_POST['age'] se recoge el valor de la edad ingresada en el formulario y se la asigna a $age. 
+Por ultimo se declara un if con la condición de que $age sea mayor o igual a 21 y se muestra un texto por pantalla. Caso contrario ($age menor o 
+igual que 21), se muestra otro texto por pantalla. 

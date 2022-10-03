@@ -1,0 +1,14 @@
+ejercicio-5)
+Este codigo crea un archivo para acumular la cantidad de visitas a una página web.
+
+contador.php:
+En este codigo en primer lugar se asigna a una variable $archivo el archivo de texto .dat con el valor inicial del contador, lo abre, lo lee y luego lo cierra.
+En segundo lugar lo vuelve a abrir para modificarlo, sumando 1 al valor del contador leído anteriormente. Guarda la modificación y cierra el archivo.
+Por ultimo muestra el total de las visitas contenido en la variable $cont.
+
+visitas.php:
+Código html para página que va a contener el contador de visitas que incluye y evalúa con include() el archivo especificado.
+Cada vez que se recargue la página, el contador aumentará en 1.
+
+contador.dat:
+Archivo de texto que contiene el valor inicial del contador seteado con valor igual a 1, con permisos de lectura y escritura.

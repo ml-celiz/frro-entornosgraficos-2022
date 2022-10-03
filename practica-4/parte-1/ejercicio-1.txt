@@ -1,4 +1,5 @@
-ejercicio-1)	
+ejercicio-1)
+
 Variables:
 •	$a: Boolean,
 •	$b: String, 

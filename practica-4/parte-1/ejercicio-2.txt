@@ -1,0 +1,40 @@
+ejercicio-2)
+a)
+•	Primer código: Inicializa una variable $i que funciona como contador en 1 y luego inicia un bucle con while donde siempre que la 
+variable $i sea menor o igual que 10 se va a mostrar por pantalla el valor de misma y luego se incrementará.
+Salida: 12345678910
+•	Segundo código: Es equivalente al primero cambiando que el contador se incrementa en otra sentencia dentro del bucle y, el bucle 
+while se encuentra declarado de otra manera con endwhile.
+Salida: 12345678910
+•	Tercer código: Inicializa una variable $i que funciona como contador en 0 pero el bucle dado por while tiene la condición de $i menor 
+que 10 encontrándose el mismo al final del bucle do. El contador primero se aumenta y después se muestra por pantalla.
+Salida: 12345678910
+
+Los tres códigos dan la misma salida, son equivalentes.
+
+b)
+•	Primer código: Se declara un bucle for donde en la primera expresión se inicializa la variable $i, en la segunda se pone la condición 
+de que $i sea menor o igual a 10, y en la tercera que $i se incremente. Luego dentro del for tenemos la sentencia para mostrar por pantalla $i.
+Salida: 12345678910
+•	Segundo código: Es equivalente al primero solamente que se reemplaza la sentencia dentro del cuerpo del for por una cuarta expresión 
+que conforman el mismo antes que el incremento donde se muestra por pantalla $i.
+Salida: 12345678910
+•	Tercer código: Se declara el bucle for donde en la primera expresión se inicializa la variable $i, la segunda esta vacía, y en la tercera 
+se produce el incremento de $i. Luego, dentro del for se declara un if donde siempre que $i mayor que 10 el bucle terminará. A continuación del 
+if se muestra por pantalla $i.
+Salida: 12345678910
+•	Cuarto código: Se inicializa la variable $i que funciona como contador en 1, luego se declara un bucle for vacío, dentro del mismo tenemos 
+una sentencia if donde siempre que $i sea mayor que 10 el bucle terminará, le sigue una sentencia de mostrar por pantalla y luego otra para incrementar $i.
+Salida: 12345678910
+
+Los cuatro códigos dan la misma salida, son equivalentes.
+
+c)
+•	Primer código: Se declara una serie de sentencias if que se evalúan según el valor de $i y cada opción tiene como salida mostrar por pantalla un texto.
+Salida: Según el valor de $i.
+•	Segundo codigo: Se declara una sentencia switch con 3 casos que se evaluarán según el valor de $i y cada uno mostrará determinada salida de 
+texto por pantalla y terminará. 
+Salida: Según el valor de $i.
+
+Los dos códigos son iguales, la sentencia switch es similar a una serie de sentencias if en la misma expresión.
+
