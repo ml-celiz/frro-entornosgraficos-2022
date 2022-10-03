@@ -1,0 +1,39 @@
+ejercicio-1)	
+Variables:
+•	$a: Boolean,
+•	$b: String, 
+•	$c: String, 
+•	$d: Integer, 
+•	$i: Integer, 
+•	$f: Integer,
+•	$g: Integer
+
+Operadores unarios: 
+•	$d += 4 
+•	$d++
+•	$f += 10
+
+Operadores binarios: $i*2 
+
+Operadores ternarios:  $a ? ++$d : $d*3
+
+Funciones: 
+•	function doble($i) Parámetro: $i,
+•	gettype($a) Parámetro: $a,
+•	gettype($b) Parámetro: $b,
+•	gettype($c) Parámetro: $c,
+•	gettype($d) Parámetro: $d,
+•	is_int($d) Parámetro: $d,
+•	is_string($a) Parámetro: $a
+
+Estructuras de control: 
+•	if (is_int($d)) { $d += 4; }
+•	if (is_string($a)) { echo "Cadena: $a"; }
+
+Salida por pantalla: 
+booleanstringstringinteger1xyzxyz184444
+echo gettype($a); 
+echo gettype($b); 
+echo gettype($c); 
+echo gettype($d); 
+echo $a, $b, $c, $d, $f, $g;
