@@ -21,8 +21,8 @@ _";
 }
 
 //Llamadas
-comprobar_nombre_usuario(“maria”) //Para corroborar ambas validaciones
-comprobar_nombre_usuario(“ma”) //Para corroborar primer validación longitud menor que 3
-comprobar_nombre_usuario(“marianievesabcdefghi12345”) //Para corroborar primer validación longitud mayor que 20
-comprobar_nombre_usuario(“{.-.,lo”) //Para corroborar segunda validación de caracteres
+comprobar_nombre_usuario("maria") //Para corroborar ambas validaciones
+comprobar_nombre_usuario("ma") //Para corroborar primer validación longitud menor que 3
+comprobar_nombre_usuario("marianievesabcdefghi12345") //Para corroborar primer validación longitud mayor que 20
+comprobar_nombre_usuario("{.-.,lo") //Para corroborar segunda validación de caracteres
 ?>
