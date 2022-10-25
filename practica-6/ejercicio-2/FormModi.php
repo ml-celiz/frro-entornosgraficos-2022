@@ -10,7 +10,7 @@
     $vResultado = mysqli_query($link, $vSql) or die (mysqli_error($link));;
     $fila = mysqli_fetch_array($vResultado);
     if(mysqli_num_rows($vResultado) == 0){
-    echo ("Ciudad Inexistente...!!! <br>"); 
+    echo ("Ciudad Inexistente!<br>"); 
     echo ("<A href='FormModiIni.html'>Continuar</A>");
     }
     else{
